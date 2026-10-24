@@ -487,3 +487,5 @@ html.dev-phone .hint-chip{font-size:12px;padding:7px 12px 7px 9px}
 html.dev-phone.is-portrait .end-cta{bottom:calc(84px + env(safe-area-inset-bottom))}
 html.dev-phone.is-landscape .end-cta{bottom:8px;padding:10px 14px;width:min(400px,60vw)}
 html.dev-phone.is-landscape .end-cta__t{margin-bottom:8px;font-size:14px}
+/* the floating sliders are replaced by paper sliders printed on the pages */
+.flip-controls,.bed-controls{display:none!important}
