@@ -919,3 +919,17 @@ body.theatre .room--film > :not(.cinema), body.theatre .psa__head, body.theatre 
 /* the STORYTELLING heading sits clear of the poster, never under it */
 .room--pencil .mega--hollow { margin-bottom: clamp(18px, 2.4vw, 40px) !important; position: relative; z-index: 2; }
 @media (max-width: 760px) { .room--pencil .mega--hollow { margin-bottom: 16px !important; } }
+
+/* logo lockup: mark and name side by side, zigzag kept clear of it */
+.mark { display: flex; align-items: center; gap: 10px; width: auto; aspect-ratio: auto; text-decoration: none; }
+.mark__glyph { flex: none; width: clamp(54px, 5.5vw, 78px); height: auto; aspect-ratio: 531 / 335; }
+.mark__name { font: 17px/1 'Gochi Hand', cursive; white-space: nowrap; color: var(--mark-c, var(--navy)); transition: color .4s; }
+.mark:hover { transform: none; }
+.mark:hover .mark__glyph { transform: rotate(-6deg) scale(1.06); }
+.mark__glyph { transition: background-color .4s, transform .3s var(--ease); }
+.scribble--zig { top: clamp(96px, 10vw, 128px); left: .6%; width: clamp(64px, 6.4vw, 104px); }
+@media (max-width: 820px) {
+  .mark__glyph { width: 46px; }
+  .mark__name { font-size: 14px; }
+  .scribble--zig { display: none; }
+}
