@@ -450,3 +450,20 @@ html.dev-phone.is-landscape{
 html.dev-phone.at-console .ind,html.dev-phone.ribbon-on .ind,html.dev-phone.overlay-open .ind,html.dev-phone .arrival:not([hidden]) ~ .ind{display:none!important}
 html.dev-phone.is-landscape .spread-frames{left:auto!important;right:12px!important;bottom:10px!important;transform:none!important;font-size:14px!important;padding:8px 12px!important}
 html.is-touch .chrome .work-menu:focus:not(:focus-visible){outline:none}
+/* the whole book on phones */
+.phone-coach .coach-turn{display:none;opacity:.8;font-size:14px}
+.phone-coach.is-upright .coach-turn{display:inline}
+/* phone on its side: the spread uses the full height; controls tuck into the corners */
+html.dev-phone.is-landscape{
+  .chrome{padding:8px 10px;background:none;align-items:flex-start}
+  .chrome .home{background:rgba(10,14,40,.55);border-radius:999px;padding:6px 8px}
+  .chrome__r{flex-direction:column;align-items:flex-end;gap:6px}
+  .chrome .work-menu{font:600 12px var(--sans)!important;padding:7px 11px;border-radius:999px;background:rgba(10,14,40,.7);color:#f4ead8}
+  .chrome .quickread{padding:7px 11px;font-size:12px}
+  .ind{left:8px!important;right:8px!important;bottom:8px!important;transform:none!important;height:auto!important;padding:0!important;background:none!important;box-shadow:none!important;justify-content:space-between;pointer-events:none}
+  .ind span{display:none!important}
+  .ind button{pointer-events:auto;width:46px!important;height:46px!important;border-radius:50%;background:#1a2175!important;box-shadow:0 4px 14px rgba(0,0,0,.4)}
+  .ind button svg{stroke:#f6f0e2!important}
+  .zoom-out{top:10px}
+}
+html.dev-phone.is-landscape .spread-frames{left:50%!important;right:auto!important;bottom:8px!important;transform:translateX(-50%)!important}
