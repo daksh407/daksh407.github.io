@@ -467,3 +467,23 @@ html.dev-phone.is-landscape{
   .zoom-out{top:10px}
 }
 html.dev-phone.is-landscape .spread-frames{left:50%!important;right:auto!important;bottom:8px!important;transform:translateX(-50%)!important}
+
+/* labels pinned next to things you can use: so every visitor knows they're there */
+.hints{position:fixed;inset:0;pointer-events:none;z-index:24}
+.hint-chip{position:absolute;left:0;top:0;display:flex;align-items:center;gap:8px;padding:8px 14px 8px 10px;margin:-48px 0 0 0;translate:-50% 0;border-radius:999px;background:#f2c928;color:#14185a;font:700 13px var(--sans);white-space:nowrap;box-shadow:0 6px 18px rgba(0,0,0,.35)}
+.hint-chip::after{content:"";position:absolute;left:50%;bottom:-8px;margin-left:-8px;border:8px solid transparent;border-bottom:0;border-top-color:#f2c928}
+.hint-chip i{width:10px;height:10px;border-radius:50%;background:#a24846;box-shadow:0 0 0 0 rgba(162,72,70,.6);animation:hint-pulse 1.4s ease-out infinite}
+.hint-chip[hidden]{display:none}
+@keyframes hint-pulse{0%{box-shadow:0 0 0 0 rgba(162,72,70,.65)}100%{box-shadow:0 0 0 10px rgba(162,72,70,0)}}
+html.dev-phone .hint-chip{font-size:12px;padding:7px 12px 7px 9px}
+@media(prefers-reduced-motion:reduce){.hint-chip i{animation:none}}
+
+/* the end of the book: play the game */
+.end-cta{position:fixed;z-index:26;left:50%;bottom:28px;transform:translateX(-50%);width:min(440px,calc(100vw - 24px));padding:18px 20px;border-radius:16px;background:rgba(14,18,48,.92);color:#f4ead8;box-shadow:0 14px 40px rgba(0,0,0,.45);text-align:center}
+.end-cta[hidden]{display:none}
+.end-cta__k{margin:0 0 4px;font:15px var(--hand);color:#f2c928}
+.end-cta__t{margin:0 0 14px;font:700 17px/1.3 var(--sans)}
+.end-cta__b{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+html.dev-phone.is-portrait .end-cta{bottom:calc(84px + env(safe-area-inset-bottom))}
+html.dev-phone.is-landscape .end-cta{bottom:8px;padding:10px 14px;width:min(400px,60vw)}
+html.dev-phone.is-landscape .end-cta__t{margin-bottom:8px;font-size:14px}
