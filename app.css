@@ -393,3 +393,5 @@ html[data-demo="intro"].at-console .cui::before,html[data-demo="ended"].at-conso
   .arrival .arrival__jump{bottom:46px;font-size:16px}
 }
 @media(prefers-reduced-motion:reduce){.arrival #arrival-enter::after,.arrival .arrival__jump svg{animation:none!important}}
+/* tidy the desk is back whenever things have been pushed around */
+.chrome #tidy:not([hidden]){display:inline-flex!important}
