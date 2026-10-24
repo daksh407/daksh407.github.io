@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Daksh Vasudeva, scrapbook</title>
+<meta name="description" content="Daksh Vasudeva, communication design. A scrapbook you can turn: a BMW-to-Porsche CGI film, the whole Semester Three scroll, storytelling in coloured pencil, and The Everything Space, a bed that becomes a chair.">
+<meta name="theme-color" content="#17205f">
+<meta property="og:title" content="Daksh Vasudeva, scrapbook">
+<meta property="og:description" content="Turn the pages: CGI film, the Sem Three scroll, coloured-pencil storytelling and a bed that becomes a chair.">
+<meta property="og:image" content="https://daksh407.github.io/img/og.jpg">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="preload" href="fonts/archivo-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/gochi-hand.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="pages/0F.webp" as="image">
+<link rel="stylesheet" href="app.css">
+<link rel="canonical" href="https://daksh407.github.io/">
+<meta property="og:url" content="https://daksh407.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<span class="portfolio-signature" aria-hidden="true">Daksh Vasudeva</span>
+<div id="arrival" class="arrival" role="dialog" aria-modal="true" aria-label="Welcome to Daksh’s portfolio"><div class="arrival__images" aria-hidden="true"><img src="img/p-cgi.webp" alt=""><img src="img/p-poster.webp" alt=""><img src="media/console-build-03.webp" alt=""></div><p class="arrival__eyebrow">a few things I’ve made</p><h1 aria-label="Daksh Vasudeva"><span class="name-line"><span class="name-word">Daksh</span></span><span class="name-line"><span class="name-word">Vasudeva.</span></span><svg class="name-stroke" viewBox="0 0 550 28" aria-hidden="true"><path d="M8 18 Q210 -3 536 12 M115 23 Q295 10 451 20"/></svg></h1><p class="arrival__line">Film. Paper. Objects. Play.</p><div class="arrival__choices"><button id="arrival-enter" type="button">To the desk <span>↗</span></button></div></div>
+<a class="skip" href="flat/">Skip to the quick read: every project on one scrolling page</a>
+
+<canvas id="stage" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="chrome">
+  <button id="home" class="home" type="button" aria-label="Back to the cover"><span class="home__mark" aria-hidden="true"></span><span class="home__name">Daksh Vasudeva</span></button>
+  <div class="chrome__r">
+    <button id="work-menu" class="work-menu" type="button" aria-label="Explore all five projects">All work <span aria-hidden="true">⊞</span></button>
+    <button id="to-console" class="tidy" type="button" hidden>Play</button>
+    <button id="tidy" class="tidy" type="button" hidden>tidy the desk ↺</button>
+    <button id="sound" class="sound" type="button" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path class="w1" d="M16 9.5c1 .9 1 4.1 0 5"/><path class="w2" d="M18.5 7c2.2 2.4 2.2 7.6 0 10"/></svg><span>sound</span></button>
+    <a class="quickread" href="flat/" title="Every project on one scrolling page">Quick read <span aria-hidden="true">≡</span></a>
+  </div>
+</header>
+
+<div id="hot-layer" class="hot-layer" role="group" aria-label="On this spread"></div>
+<p id="hint" class="hint" aria-hidden="true">drag the corner<br>to open it <svg viewBox="0 0 60 50"><path d="M50 6 C 46 30, 30 42, 8 40 M 20 30 L 8 40 L 20 48"/></svg></p>
+
+<nav class="ind" aria-label="Turn the pages">
+  <button id="ind-prev" type="button" aria-label="Previous page"><svg viewBox="0 0 40 40"><path d="M26 8 L 12 20 L 26 32"/></svg></button>
+  <span id="ind-text">the cover</span>
+  <button id="ind-next" type="button" aria-label="Next page"><svg viewBox="0 0 40 40"><path d="M14 8 L 28 20 L 14 32"/></svg></button>
+</nav>
+
+<div id="console-ui" class="cui" hidden>
+  <div id="cui-focus" tabindex="-1" class="cui__focus"></div>
+  <button id="cui-back" type="button" class="cui__back">↶ back to the book</button>
+  <section id="station-intro" class="station-note station-intro">
+    <p class="station-intro__kicker">05 · Arduino game console</p>
+    <h2>The Crossing.</h2><p>A ship's console Daksh built by hand. Take it for a 15-second sail.</p>
+    <div class="station-intro__actions">
+      <button id="demo-play" class="cbtn cbtn--play" type="button">▶ Play</button>
+      <button id="cui-real" class="cbtn cbtn--real" type="button">Real build ↗</button>
+    </div>
+  </section>
+  <div id="sail-coach" class="sail-coach" hidden aria-live="polite"><span id="coach-step" class="sail-coach__step">1 / 3</span><b id="coach-title">Steer</b><span id="coach-copy">Drag the wheel</span></div>
+  <div id="sail-clock" class="sail-clock" hidden><span id="sail-seconds">15s</span><span class="sail-track"><i id="sail-fill"></i></span><button id="sail-exit" type="button" aria-label="End this sail">✕</button></div>
+  <div id="sail-controls" class="sail-controls" hidden aria-label="Ship controls">
+    <button type="button" data-steer="-1" aria-label="Steer left">←</button>
+    <label><span>Speed</span><input id="cui-engine" type="range" min="1" max="9" value="5" aria-label="Engine speed"></label>
+    <button id="cui-bell" type="button">Bell</button><button type="button" data-steer="1" aria-label="Steer right">→</button>
+  </div>
+  <section id="sail-end" class="station-note sail-end" hidden><h2>Another sail?</h2><div class="station-intro__actions"><button id="demo-replay" class="cbtn cbtn--play" type="button">↻ Replay</button><button id="demo-real" class="cbtn cbtn--real" type="button">Real build ↗</button></div><button id="demo-next" class="ux-text" type="button">Back to the work →</button></section>
+</div>
+<p id="page-guide" class="page-guide" hidden><span class="mouse-guide">Drag page edges · ← → keys</span><span class="touch-guide">Swipe page edges · tap arrows</span></p>
+<div id="flip-controls" class="flip-controls" hidden><label for="flip-slider">Flip slider</label><input id="flip-slider" type="range" min="1" max="5" step="1" value="1" aria-label="Flip slider, shaving frame"><div class="flip-numbers" role="group" aria-label="Choose a shaving frame"><button type="button" data-flip-frame="1" aria-label="Show shaving frame 1" aria-pressed="true">1</button><button type="button" data-flip-frame="2" aria-label="Show shaving frame 2" aria-pressed="false">2</button><button type="button" data-flip-frame="3" aria-label="Show shaving frame 3" aria-pressed="false">3</button><button type="button" data-flip-frame="4" aria-label="Show shaving frame 4" aria-pressed="false">4</button><button type="button" data-flip-frame="5" aria-label="Show shaving frame 5" aria-pressed="false">5</button></div></div>
+<div id="bed-controls" class="bed-controls" hidden><span>Bed</span><input type="range" id="bed-slider" min="0" max="100" value="0" aria-label="Transform the bed into a chair and side table"><span>Work</span><button type="button" id="bed-page" hidden>Back to page ↶</button></div>
+<button type="button" id="book-to-game" class="book-to-game" hidden><span>Explore Arduino</span><span>design project ↗</span></button>
+<p id="sr" class="sr" aria-live="polite"></p>
+<div id="tip" class="tip" hidden></div>
+
+<!-- the unrolled scroll -->
+<div id="ribbon-ui" class="rib" hidden>
+  <div class="rib__bar">
+    <p class="rib__title"><span class="hand">Sem Three</span> <span id="rib-chap">cover</span></p>
+  </div>
+  <div class="rib__side" role="group" aria-label="Scroll controls">
+    <button id="rib-back" type="button" class="rib__back">↶ Back to the scrapbook</button>
+    <button id="rib-flat" type="button" class="rib__flat">Read it flat</button>
+    <a class="rib__pdf" href="media/semester-three.pdf" target="_blank" rel="noopener">PDF ↗</a>
+    <button id="rib-all" type="button" hidden aria-pressed="false">see it all</button>
+  </div>
+  <nav class="rib__ruler" id="rib-ruler" aria-label="Sem Three chapters"><span class="rib__track"></span><span class="rib__you" id="rib-you"></span></nav>
+  <p class="rib__hint hand" aria-hidden="true">scroll or drag to keep unrolling ↓</p>
+</div>
+
+<!-- film -->
+<div id="cinema" class="dlg cin" role="dialog" aria-modal="true" aria-labelledby="cin-title" hidden>
+  <div class="cin__frame"><video id="cin-video" controls playsinline preload="none"></video></div>
+  <p id="cin-title" class="cin__title hand"></p>
+  <button id="cin-close" class="dlg__close" type="button" data-close data-autofocus>close ✕</button>
+</div>
+
+<!-- images -->
+<div id="lightbox" class="dlg lb" role="dialog" aria-modal="true" aria-label="Artwork" hidden>
+  <div class="lb__img"><img id="lb-img" alt=""></div>
+  <p id="lb-cap" class="lb__cap hand"></p>
+  <button id="lb-close" class="dlg__close" type="button" data-close data-autofocus>close ✕</button>
+  <button id="lb-prev" class="lb__nav lb__nav--prev" type="button" aria-label="Previous">←</button>
+  <button id="lb-next" class="lb__nav lb__nav--next" type="button" aria-label="Next">→</button>
+</div>
+
+<!-- Sem Three, flat -->
+<div id="reader" class="dlg reader" role="dialog" aria-modal="true" aria-label="Sem Three, the full scroll, flat" hidden>
+  <div class="reader__bar">
+    <button id="reader-close" class="dlg__close dlg__close--left" type="button" data-close data-autofocus>✕ close</button>
+    <p class="reader__title"><span class="hand">Sem Three</span> <span id="reader-chap"></span></p>
+    <a class="reader__pdf" href="media/semester-three.pdf" target="_blank" rel="noopener">PDF ↗</a>
+    <span class="reader__progress"><span id="reader-progress"></span></span>
+  </div>
+  <div class="reader__scroll" id="reader-scroll" tabindex="-1"><div class="reader__doc" id="reader-doc"></div><p class="reader__end hand">end of the scroll</p></div>
+  <nav class="ruler" id="ruler" aria-label="Jump to a chapter"><span class="ruler__track"></span></nav>
+</div>
+
+<nav id="journey" class="journey" aria-label="Explore the five projects"><button data-project="0" aria-label="Film"><b>01</b><span>Film</span></button><button data-project="1" aria-label="Semester Three"><b>02</b><span>Sem Three</span></button><button data-project="2" aria-label="Storytelling"><b>03</b><span>Stories</span></button><button data-project="3" aria-label="The Everything Space"><b>04</b><span>Furniture</span></button><button data-project="4" aria-label="The Crossing"><b>05</b><span>Play</span></button><button id="journey-next" aria-label="Explore next project">→</button></nav>
+<button id="spread-frames" class="spread-frames" type="button" hidden>Spread the frames ⊞</button>
+<div id="work-index" class="dlg work-index" role="dialog" aria-modal="true" aria-labelledby="work-index-title" hidden><header><p class="small-label">FIVE WAYS IN</p><h2 id="work-index-title">On my desk.</h2><button class="dlg__close" data-close id="index-close" type="button">Close ✕</button></header><div class="work-grid">
+<button data-project="0"><img src="img/p-cgi.webp" alt="BMW to Porsche film"><span><b>01</b> BMW → Porsche <i>Film / CGI</i></span></button>
+<button data-project="1"><img src="img/p-semcover.webp" alt="Semester Three portfolio"><span><b>02</b> Sem Three <i>Graphic design</i></span></button>
+<button data-project="2"><img src="img/p-poster.webp" alt="Coloured pencil storytelling"><span><b>03</b> Stories in pencil <i>Illustration</i></span></button>
+<button data-project="3"><img src="img/p-model.webp" alt="The Everything Space prototype"><span><b>04</b> The Everything Space <i>Product / process</i></span></button>
+<button data-project="4"><img src="media/console-build-03.webp" alt="The handmade console"><span><b>05</b> The Crossing <i>Physical × digital</i></span></button>
+</div><footer><span id="work-progress">Five projects to explore</span><a href="flat/">Quick read: every project on one page ↗</a></footer></div>
+<div id="frames-gallery" class="dlg frames-gallery" role="dialog" aria-modal="true" aria-labelledby="frames-title" hidden><header><p class="small-label">STORYTELLING / IN SEQUENCE</p><h2 id="frames-title">A shave, in five frames.</h2><button class="dlg__close" data-close id="frames-close" type="button">Close ✕</button></header><nav aria-label="Choose a sequence"><button data-sequence="shave" aria-pressed="true">A shave</button><button data-sequence="chase" aria-pressed="false">The chase</button><button data-sequence="garlic" aria-pressed="false">Five senses</button><button data-sequence="bottle" aria-pressed="false">One bottle</button></nav><div id="frames-grid" class="frames-grid"></div></div>
+<div class="loading" aria-hidden="true"><span class="hand">opening the scrapbook…</span></div>
+<div class="fallback" role="alert">
+  <p class="hand">The 3D desk is unavailable in this browser. Your projects are still here.</p>
+  <a href="flat/">View the portfolio →</a>
+</div>
+<div class="filenote" role="alert">
+  <p class="hand">Browsers won't load the 3D pages straight from a folder.</p>
+  <p>Double-click <b>preview.command</b> (Mac), or publish the folder, then open it again. <a href="flat/">Or open the quick read →</a></p>
+</div>
+<noscript><p class="fallback" style="display:block">This scrapbook needs JavaScript. <a href="flat/">Open the quick read →</a></p></noscript>
+
+<script src="app.js" onerror="document.documentElement.classList.add('no-webgl');document.getElementById('arrival').hidden=true"></script>
+</body>
+</html>

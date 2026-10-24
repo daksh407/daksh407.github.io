@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Daksh Vasudeva, quick read</title>
+<meta name="description" content="Daksh Vasudeva, communication design. A scrapbook that plays back: CGI film, the Semester Three portfolio, storytelling in coloured pencil, and The Everything Space.">
+<meta name="theme-color" content="#efe6d3">
+<meta property="og:title" content="Daksh Vasudeva">
+<meta property="og:description" content="A scrapbook that plays back, film, paper, pencil and a bed that becomes a chair.">
+<meta property="og:image" content="https://daksh407.github.io/img/og.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<link rel="preload" href="fonts/archivo-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/gochi-hand.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/site.css">
+<link rel="canonical" href="https://daksh407.github.io/flat/">
+<meta property="og:url" content="https://daksh407.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body data-on="ivory">
+
+<a class="skip" href="#film">Skip to the work</a>
+<a class="backbook" href="../">← back to the 3D desk</a>
+
+<!-- ============ MASTHEAD ============ -->
+<header class="mast" id="mast">
+  <a class="mark" href="#top" aria-label="Daksh Vasudeva, back to the cover"><span class="mark__glyph" aria-hidden="true"></span><span style="font:15px 'Gochi Hand',cursive;white-space:nowrap;margin-left:12px">Daksh Vasudeva</span></a>
+  <nav class="tabs" aria-label="Rooms">
+    <a class="tab" href="#film" data-room="film"><span class="tab__n" data-l="film">01</span><span class="tab__l">BMW → Porsche</span></a>
+    <a class="tab" href="#sem" data-room="sem"><span class="tab__n" data-l="sem 3">02</span><span class="tab__l">Sem Three</span></a>
+    <a class="tab" href="#pencil" data-room="pencil"><span class="tab__n" data-l="pencil">03</span><span class="tab__l">Pencil</span></a>
+    <a class="tab" href="#bed" data-room="bed"><span class="tab__n" data-l="bed">04</span><span class="tab__l">Everything Space</span></a>
+    <a class="tab" href="#console" data-room="console"><span class="tab__n">05</span><span class="tab__l">The Crossing</span></a>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- ============ 00 · COVER ============ -->
+<section class="room room--cover" id="top" data-theme="ivory" aria-label="Cover">
+  <svg class="scribble scribble--zig" viewBox="0 0 300 260" aria-hidden="true" data-reveal>
+    <path pathLength="1" d="M8 196 C 40 184, 120 170, 216 160 M18 28 L38 120 L62 60 L84 138 L108 72 L132 150 L170 108 L214 158"/>
+  </svg>
+  <svg class="scribble scribble--loop" viewBox="0 0 260 300" aria-hidden="true" data-reveal>
+    <path pathLength="1" d="M10 250 C 60 240, 70 170, 40 150 C 10 130, 60 70, 120 110 C 170 140, 150 220, 110 200 C 70 180, 120 60, 200 70 C 250 76, 250 150, 210 160 C 170 168, 180 110, 240 40"/>
+  </svg>
+
+  <div class="cover__title">
+    <h1 class="stamp" id="stamp"><span class="stamp__line">Daksh</span><span class="stamp__line">Vasudeva</span></h1>
+    <p class="cover__sub"><span class="tape tape--cobalt" style="--rot:-2.5deg">communication design</span></p>
+  </div>
+
+  <div class="collage" id="collage" aria-label="Projects, each print opens its room">
+    <a class="print print--cgi" href="#film" data-drag style="--x:67%;--y:1%;--w:25%;--r:4deg;--mx:30%;--my:0%;--mw:66%;--mr:3deg" data-reveal>
+      <img src="../img/p-cgi.webp" width="900" height="488" alt="Still from the BMW-to-Porsche film: the finished white Porsche hanging in mid-air in front of a curtain">
+      <span class="print__label">01 · BMW → Porsche</span>
+    </a>
+    <a class="print print--sem" href="#sem" data-drag style="--x:4%;--y:44%;--w:17%;--r:-6deg;--mx:1%;--my:29%;--mw:46%;--mr:-5deg" data-reveal>
+      <img src="../img/p-semcover.webp" width="620" height="657" alt="Cover of the Semester Three portfolio: SEM THREE in heavy navy type above torn blue paper">
+      <span class="print__label">02 · Sem Three</span>
+    </a>
+    <a class="print print--poster" href="#pencil" data-drag style="--x:76%;--y:40%;--w:15%;--r:6deg;--mx:53%;--my:25%;--mw:44%;--mr:5deg" data-reveal>
+      <img src="../img/p-poster.webp" width="640" height="900" alt="Phir Se Zinda!, a coloured-pencil poster of an old man laughing as a battery glows in his robotic hand">
+      <span class="print__label">03 · Pencil</span>
+    </a>
+    <a class="print print--character" href="#pencil" data-drag style="--x:25%;--y:62%;--w:12%;--r:-2deg;--mx:3%;--my:66%;--mw:36%;--mr:-3deg" data-reveal>
+      <img src="../img/p-character.webp" width="600" height="601" alt="Coloured-pencil character sheet: an old man in a beanie, arms out, one arm robotic">
+      <span class="print__label">03 · the old man</span>
+    </a>
+    <a class="print print--model" href="#bed" data-drag style="--x:57%;--y:60%;--w:14%;--r:2.5deg;--mx:47%;--my:64%;--mw:42%;--mr:3deg" data-reveal>
+      <img src="../img/p-model.webp" width="520" height="594" alt="The Everything Space scale model on display beside a laptop showing its 3D render">
+      <span class="print__label">04 · The Everything Space</span>
+    </a>
+    <a class="inkstamp" href="#sem" data-drag style="--x:43%;--y:66%;--w:7.5%;--r:-8deg;--mx:6%;--my:2%;--mw:19%;--mr:-8deg" aria-label="Parvati icon from Semester Three, open Sem Three" data-reveal>
+      <span class="inkstamp__glyph" aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <p class="cover__note hand" data-reveal>scrub the film · unroll the scroll · fold the bed <span aria-hidden="true">↓</span></p>
+  <p class="cover__hint hand" aria-hidden="true">drag the prints around <span>↻</span> <button class="cover__reset" type="button" id="reset" tabindex="-1">put them back</button></p>
+</section>
+
+<!-- ============ 01 · BMW → PORSCHE ============ -->
+<section class="room room--film" id="film" data-theme="ink" aria-labelledby="film-title">
+  <div class="room__head">
+    <span class="chalk" aria-hidden="true">01</span>
+    <span class="tape tape--teal" style="--rot:2deg">Blender · CGI · VFX</span>
+  </div>
+  <h2 class="mega film__title" id="film-title" data-reveal>BMW <svg class="arrow" viewBox="0 0 220 90" aria-hidden="true"><path pathLength="1" d="M6 52 C 60 40, 120 62, 196 44 M168 18 L 204 44 L 170 74"/></svg><span class="sr">to</span> Porsche</h2>
+  <p class="film__line hand" data-reveal>a car comes out of a laptop screen, and transforms.</p>
+
+  <div class="cinema" id="cgi" data-theatre>
+    <div class="cinema__frame">
+      <video class="cinema__video" preload="none" playsinline poster="../media/cgi-poster.webp" data-src="../media/cgi.mp4" aria-label="BMW to Porsche, CGI film, 34 seconds"></video>
+      <img class="cinema__still" src="../media/cgi-poster.webp" width="1400" height="788" alt="" aria-hidden="true">
+      <button class="play" type="button" aria-label="Play the BMW to Porsche film, 34 seconds, with sound">
+        <svg viewBox="0 0 120 120" aria-hidden="true"><path class="play__ring" d="M60 8 C 92 6, 114 30, 112 62 C 110 94, 86 114, 56 112 C 26 110, 6 88, 9 58 C 12 30, 34 10, 64 9"/><path class="play__tri" d="M48 38 L 84 60 L 48 82 Z"/></svg>
+        <span class="play__t">play · 0:34</span>
+      </button>
+      <span class="cinema__time" aria-hidden="true"></span>
+    </div>
+    <div class="filmstrip-wrap">
+      <ol class="filmstrip" id="filmstrip" aria-label="Frames from the film, choose one to play from that moment"></ol>
+    </div>
+    <p class="cinema__meta"><span class="hand cinema__hint cinema__hint--fine">hover the strip to scrub · click a frame to play from there</span><span class="hand cinema__hint cinema__hint--touch">tap a frame to play from there</span><span class="cinema__spec">live action + Blender · 0:34 · sound on</span></p>
+  </div>
+</section>
+
+<!-- ============ 02 · SEM THREE ============ -->
+<section class="room room--sem" id="sem" data-theme="ivory" aria-labelledby="sem-title">
+  <div class="room__head">
+    <span class="chalk" aria-hidden="true">02</span>
+    <span class="tape tape--cobalt" style="--rot:-1.5deg">semester three · the whole scroll</span>
+  </div>
+  <h2 class="sr" id="sem-title">Semester Three portfolio</h2>
+
+  <div class="roll">
+    <nav class="roll__index" aria-label="Semester Three chapters">
+      <p class="hand roll__index-h">chapters</p>
+      <ol id="sem-index"></ol>
+      <a class="ticket" href="../media/semester-three.pdf" target="_blank" rel="noopener"><span>original PDF</span><span class="ticket__s">one continuous page · 20 MB</span></a>
+    </nav>
+
+    <div class="roll__paper">
+      <div class="roll__tile roll__tile--first">
+        <img src="../media/semester-01.webp" width="1000" height="2000" alt="Semester Three portfolio, opening: SEM THREE cover, the six chapters, and the start of 01 Icon design" loading="lazy" decoding="async">
+        <div class="roll__spots" id="sem-spots"></div>
+        <p class="roll__nudge hand" aria-hidden="true">tap a chapter <svg viewBox="0 0 80 60"><path d="M4 8 C 30 4, 60 18, 66 50 M54 40 L 66 52 L 76 38"/></svg></p>
+      </div>
+      <div class="roll__tile roll__tile--cut">
+        <img src="../media/semester-02.webp" width="1000" height="2000" alt="" loading="lazy" decoding="async">
+        <div class="roll__curl" aria-hidden="true"></div>
+      </div>
+      <button class="unroll" type="button" id="unroll" data-open-tile="2" data-open-y="0">
+        <span class="unroll__k">keep unrolling</span>
+        <span class="unroll__s hand">the full scroll opens right here, at page two ↓</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 · PENCIL ============ -->
+<section class="room room--pencil" id="pencil" data-theme="ink" aria-labelledby="pencil-title">
+  <div class="room__head">
+    <span class="chalk" aria-hidden="true">03</span>
+    <span class="tape tape--brick" style="--rot:-2deg">storytelling · coloured pencil</span>
+  </div>
+  <h2 class="mega mega--hollow" id="pencil-title" data-reveal><span>Story</span><span>telling</span></h2>
+
+  <div class="sketchbook">
+    <figure class="sb sb--poster" data-reveal>
+      <button class="sb__btn" type="button" data-lightbox="pencil" data-full="../media/story-04.webp" data-w="1600" data-h="2249" data-cap="Phir Se Zinda!, “Yeh sirf battery nahi, dhadkan hai.”">
+        <img src="../media/story-04.webp" width="1600" height="2249" loading="lazy" decoding="async" alt="Poster: PHIR SE ZINDA! Yeh sirf battery nahi, dhadkan hai. An old man laughs as a battery glows in his robotic hand. The only upgrade that matters. Don't expire.">
+      </button>
+      <figcaption class="hand">the poster, pasted up in his world, selling the battery</figcaption>
+    </figure>
+    <figure class="sb sb--character" data-reveal>
+      <button class="sb__btn" type="button" data-lightbox="pencil" data-full="../media/story-01.webp" data-w="1600" data-h="1603" data-cap="Character sheet">
+        <img src="../media/story-01.webp" width="1600" height="1603" loading="lazy" decoding="async" alt="Character sheet: an old man in a beanie and worn jacket, arms out, one arm robotic">
+      </button>
+      <figcaption class="hand">the character</figcaption>
+    </figure>
+    <figure class="sb sb--scene" data-reveal>
+      <button class="sb__btn" type="button" data-lightbox="pencil" data-full="../media/story-02.webp" data-w="1600" data-h="1603" data-cap="His world, him and the battery">
+        <img src="../media/story-02.webp" width="1600" height="1603" loading="lazy" decoding="async" alt="The old man slumped in an armchair, holding up a battery in his robotic hand; a laptop on the desk reads LAST BATTERY">
+      </button>
+      <figcaption class="hand">his world, him and the battery</figcaption>
+    </figure>
+    <p class="sb__note hand" aria-hidden="true">tap anything to see it big</p>
+  </div>
+
+  <div class="strips">
+    <figure class="strip" data-reveal>
+      <figcaption class="strip__cap"><span class="strip__n">a</span><span class="hand">the element, the battery, from every perspective</span></figcaption>
+      <div class="strip__track"><button class="strip__btn" type="button" data-lightbox="pencil" data-full="../media/story-03.webp" data-w="1600" data-h="257" data-cap="The element, the battery, from every perspective"><img src="../media/story-03.webp" width="1600" height="257" loading="lazy" decoding="async" alt="Seven frames studying the battery from different angles, ending in two black silhouettes"></button></div>
+    </figure>
+    <figure class="strip" data-reveal>
+      <figcaption class="strip__cap"><span class="strip__n">b</span><span class="hand">brief: capture any process in five frames, a shave</span></figcaption>
+      <div class="strip__track"><button class="strip__btn" type="button" data-lightbox="pencil" data-full="../media/story-05.webp" data-w="1600" data-h="352" data-cap="Brief: capture any process in five frames, a shave"><img src="../media/story-05.webp" width="1600" height="352" loading="lazy" decoding="async" alt="Five frames: a bearded young man lathers up, shaves, and ends clean-shaven and smiling"></button></div>
+    </figure>
+    <figure class="strip" data-reveal>
+      <figcaption class="strip__cap"><span class="strip__n">c</span><span class="hand">one bottle, four frames</span></figcaption>
+      <div class="strip__track"><button class="strip__btn" type="button" data-lightbox="pencil" data-full="../media/story-06.webp" data-w="1600" data-h="439" data-cap="One bottle, four frames"><img src="../media/story-06.webp" width="1600" height="439" loading="lazy" decoding="async" alt="Four frames: a wine bottle and glass on a table, a glass at an altar, the bottle crossed out, the bottle handed over as a gift"></button></div>
+    </figure>
+    <figure class="strip" data-reveal>
+      <figcaption class="strip__cap"><span class="strip__n">d</span><span class="hand">brief: random cards, a hiker, a bathroom, a bear, a gun, one story in five frames</span></figcaption>
+      <div class="strip__track"><button class="strip__btn" type="button" data-lightbox="pencil" data-full="../media/story-07.webp" data-w="1600" data-h="417" data-cap="Random cards: a hiker, a bathroom, a bear, a gun, one story, start to finish, in five frames"><img src="../media/story-07.webp" width="1600" height="417" loading="lazy" decoding="async" alt="Five frames: a hiker in a forest, a dark figure charging through blue trees, a door flung open, a bear at a window, the hiker leaving as a bear and cub look on"></button></div>
+    </figure>
+    <figure class="strip" data-reveal>
+      <figcaption class="strip__cap"><span class="strip__n">e</span><span class="hand">brief: garlic bread through the five senses, in five abstract frames</span></figcaption>
+      <div class="strip__track"><button class="strip__btn" type="button" data-lightbox="pencil" data-full="../media/story-08.webp" data-w="1600" data-h="348" data-cap="Garlic bread through the five senses, five abstract frames"><img src="../media/story-08.webp" width="1600" height="348" loading="lazy" decoding="async" alt="Five abstract coloured-pencil frames of garlic bread, one for each of the five senses"></button></div>
+    </figure>
+    <p class="strips__swipe hand" aria-hidden="true">swipe the strips →</p>
+    <p class="strips__pdf"><a class="ticket ticket--ivory" href="../media/storytelling-selected.pdf" target="_blank" rel="noopener"><span>all eight pages</span><span class="ticket__s">selected sketches &amp; frames · PDF</span></a></p>
+  </div>
+</section>
+
+<!-- ============ 04 · THE EVERYTHING SPACE ============ -->
+<section class="room room--bed" id="bed" data-theme="oxblood" aria-labelledby="bed-title">
+  <div class="room__head">
+    <span class="chalk" aria-hidden="true">04</span>
+    <span class="tape tape--hazard" style="--rot:1.5deg">group research · product · film</span>
+  </div>
+  <h2 class="mega bed__title" id="bed-title" data-reveal><span>The</span> <span>Everything</span> <span>Space</span></h2>
+
+  <div class="bed__open">
+    <figure class="bed__room" data-reveal>
+      <img src="../img/bedroom.webp" width="1400" height="470" loading="lazy" decoding="async" alt="A cluttered bedroom at night: an unmade bed, records, posters and a lamp, the cover image of the group's process deck">
+    </figure>
+    <p class="bed__problem" data-reveal>Work, rest and sleep in one bed, with nothing marking the switch between them.</p>
+    <blockquote class="bed__quote" data-reveal>
+      <p>The bed was never meant for this.</p>
+      <footer class="hand">closing line of the group's process deck</footer>
+    </blockquote>
+  </div>
+
+  <aside class="mine" aria-label="Daksh's part of the research" data-reveal>
+    <span class="tape tape--ivory" style="--rot:-3deg">my part of the research</span>
+    <p class="mine__t">The death of the transition period</p>
+    <ul class="mine__chips">
+      <li>work-life boundary blurring</li>
+      <li>the missing commute</li>
+      <li>role blurring</li>
+      <li>unpaid overtime</li>
+      <li>disrupted habits</li>
+    </ul>
+  </aside>
+
+  <!-- the lever -->
+  <div class="lever" id="lever">
+    <p class="lever__lead hand" data-reveal>so: a bed that becomes a chair, with a table that comes out of it ↓</p>
+    <div class="lever__grid">
+      <div class="sheet lever__sheet">
+        <svg class="mech" id="mech" viewBox="86 34 640 340" role="img" aria-labelledby="mech-t mech-d">
+          <title id="mech-t">Bed-to-chair mechanism, side section</title>
+          <desc id="mech-d">An illustrative side view: three mattress panels on a frame. Moving towards chair mode tilts the left panel down, lifts the right panel into a backrest with a fluid piston, and swings a table up out of the central slot.</desc>
+          <defs>
+            <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="7" stroke="#2c3fa8" stroke-width="2"/></pattern>
+            <pattern id="hatch-ink" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><line x1="0" y1="0" x2="0" y2="8" stroke="#3a332b" stroke-width="1"/></pattern>
+            <filter id="pencil" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="4" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/></filter>
+          </defs>
+          <g filter="url(#pencil)">
+          <g class="mech__frame">
+            <rect x="108" y="236" width="584" height="74" rx="3"/>
+            <path d="M126 310 v18 M674 310 v18"/>
+            <rect class="mech__slot" x="312" y="244" width="176" height="10" fill="url(#hatch-ink)"/>
+          </g>
+          <g class="mech__plate"><path d="M300 232 H 500 V 240 H 300 Z" fill="url(#hatch-ink)"/><path d="M318 240 V 268 M482 240 V 268"/></g>
+          <!-- horizontal piston -->
+          <g class="mech__hp">
+            <rect x="388" y="270" width="110" height="24" rx="4" fill="url(#hatch)"/>
+            <rect class="mech__hp-rod" id="hp-rod" x="318" y="279" width="70" height="6"/>
+            <circle cx="506" cy="282" r="5"/>
+          </g>
+          <!-- vertical piston -->
+          <g class="mech__vp">
+            <rect x="548" y="250" width="40" height="80" rx="5"/>
+            <rect class="mech__fluid" id="vp-fluid" x="552" y="300" width="32" height="26" rx="3"/>
+            <rect class="mech__vp-rod" id="vp-rod" x="565" y="206" width="6" height="46"/>
+          </g>
+          <!-- table -->
+          <g class="mech__table" id="table">
+            <rect x="330" y="246" width="140" height="8" rx="2"/>
+            <circle cx="330" cy="250" r="4"/>
+          </g>
+          <line class="mech__post" id="post" x1="330" y1="250" x2="330" y2="250"/>
+          <!-- panels -->
+          <g class="mech__panel" id="p-left"><rect x="122" y="198" width="176" height="34" rx="9"/><path d="M140 206 h 140" class="mech__quilt"/></g>
+          <g class="mech__panel"><rect x="302" y="198" width="196" height="34" rx="9"/><path d="M320 206 h 160" class="mech__quilt"/></g>
+          <g class="mech__panel" id="p-right"><rect x="502" y="198" width="176" height="34" rx="9"/><path d="M520 206 h 140" class="mech__quilt"/><path class="mech__pillow" d="M600 198 C 600 178, 668 176, 672 196 Z"/></g>
+          <!-- axles -->
+          <g class="mech__axle"><circle cx="300" cy="215" r="7"/><path d="M294 209 l12 12 M306 209 l-12 12 M300 206 v18 M291 215 h18"/></g>
+          <g class="mech__axle"><circle cx="500" cy="215" r="7"/><path d="M494 209 l12 12 M506 209 l-12 12 M500 206 v18 M491 215 h18"/></g>
+          <!-- labels -->
+          <g class="mech__labels">
+            <text x="268" y="168" class="r">axle</text><path class="r" d="M290 172 L 298 204"/>
+            <text x="508" y="168" class="r">axle</text><path class="r" d="M518 172 L 502 204"/>
+            <text x="186" y="352">support plate</text><path d="M240 340 L 306 240"/>
+            <text x="404" y="352">piston</text><path d="M430 338 L 440 296"/>
+            <text x="612" y="352" class="b">fluid</text><path class="b" d="M622 338 L 586 316"/>
+            <text x="352" y="150" class="t" id="table-label">table</text>
+          </g>
+          </g>
+        </svg>
+        <div class="lever__controls">
+          <button class="lever__end" type="button" data-to="0">bed mode</button>
+          <label class="sr" for="lever-range">Fold from bed mode to chair mode</label>
+          <input class="lever__range" id="lever-range" type="range" min="0" max="100" value="0" step="1" aria-valuetext="bed mode">
+          <button class="lever__end" type="button" data-to="100">chair mode</button>
+        </div>
+        <p class="lever__state hand" id="lever-state" aria-live="polite">bed mode, rest</p>
+      </div>
+
+      <div class="lever__side">
+        <figure class="xfade" data-reveal>
+          <img class="xfade__a" src="../img/es-sketch-10.webp" width="1000" height="592" loading="lazy" decoding="async" alt="Group sketch 10: the bed flat, with armrests rising from the mattress">
+          <img class="xfade__b" id="xfade-b" src="../img/es-sketch-09.webp" width="1000" height="581" loading="lazy" decoding="async" alt="Group sketch 9: one side of the bed folded into a chair with backrest and armrests">
+          <figcaption class="hand">the team's perspective sketches</figcaption>
+        </figure>
+        <ol class="modes" aria-label="The team's mechanism sketches">
+          <li><button class="mode is-on" type="button" data-to="0"><img src="../img/es-flat.webp" width="1100" height="515" loading="lazy" decoding="async" alt="Mechanism sketch: flat mode"><span class="hand">flat</span></button></li>
+          <li><button class="mode" type="button" data-to="50"><img src="../img/es-mid.webp" width="1100" height="738" loading="lazy" decoding="async" alt="Mechanism sketch: mid transition"><span class="hand">mid</span></button></li>
+          <li><button class="mode" type="button" data-to="100"><img src="../img/es-chair.webp" width="1100" height="608" loading="lazy" decoding="async" alt="Mechanism sketch: chair mode"><span class="hand">chair</span></button></li>
+        </ol>
+        <blockquote class="intent">
+          <p>“a physical action that tells the brain the mode has changed.”</p>
+          <footer class="hand">the group's design intent</footer>
+        </blockquote>
+      </div>
+    </div>
+    <p class="fine">Drawing above is an illustration, redrawn from the team's mechanism sketches. The concept was explored as a scale model, not a tested full-size mechanism.</p>
+  </div>
+
+  <!-- the model -->
+  <div class="model">
+    <figure class="clip clip--syringe" data-reveal>
+      <div class="clip__frame">
+        <video id="syringe" muted loop playsinline preload="none" poster="../media/prototype-b-poster.webp" data-src="../media/prototype-b.mp4" aria-label="Close-up: syringe mechanism inside the scale model, 3 seconds, looping"></video>
+        <button class="clip__toggle" type="button" id="syringe-toggle" aria-pressed="false">play loop</button>
+      </div>
+      <figcaption><span class="hand">inside the scale model, syringes doing the pushing</span></figcaption>
+    </figure>
+    <figure class="clip clip--expo" data-reveal>
+      <div class="clip__frame clip__frame--tall cinema" data-player>
+        <video class="cinema__video" preload="none" playsinline poster="../media/prototype-a-poster.webp" data-src="../media/prototype-a.mp4" aria-label="The scale model at the exhibition, 15 seconds"></video>
+        <button class="play play--sm" type="button" aria-label="Play exhibition footage, 15 seconds">
+          <svg viewBox="0 0 120 120" aria-hidden="true"><path class="play__ring" d="M60 8 C 92 6, 114 30, 112 62 C 110 94, 86 114, 56 112 C 26 110, 6 88, 9 58 C 12 30, 34 10, 64 9"/><path class="play__tri" d="M48 38 L 84 60 L 48 82 Z"/></svg>
+          <span class="play__t">0:15</span>
+        </button>
+      </div>
+      <figcaption><span class="hand">the model at the exhibition</span></figcaption>
+    </figure>
+  </div>
+
+  <!-- the film -->
+  <div class="psa">
+    <div class="psa__head" data-reveal>
+      <p class="psa__title">Step out of <em>bed.</em></p>
+      <span class="tape tape--hazard" style="--rot:-2deg">campaign film · 1:32</span>
+    </div>
+    <div class="cinema psa__cinema" data-player data-theatre>
+      <div class="cinema__frame">
+        <video class="cinema__video" preload="none" playsinline poster="../media/film-poster.webp" data-src="../media/film.mp4" aria-label="Step out of bed, campaign film, 1 minute 32 seconds"></video>
+        <button class="play" type="button" aria-label="Play the campaign film, 1 minute 32 seconds, with sound">
+          <svg viewBox="0 0 120 120" aria-hidden="true"><path class="play__ring" d="M60 8 C 92 6, 114 30, 112 62 C 110 94, 86 114, 56 112 C 26 110, 6 88, 9 58 C 12 30, 34 10, 64 9"/><path class="play__tri" d="M48 38 L 84 60 L 48 82 Z"/></svg>
+          <span class="play__t">play · 1:32</span>
+        </button>
+      </div>
+    </div>
+    <div class="psa__after">
+      <dl class="credits" data-reveal>
+        <div><dt>Directed by</dt><dd>Swar Namdeo, Siddharth Mohan, Vikrant Karnwal</dd></div>
+        <div><dt>DOP</dt><dd>Swar Namdeo</dd></div>
+        <div><dt>Edited by</dt><dd>Siddharth Mohan</dd></div>
+        <div><dt>Cast</dt><dd>Dhairya Gupta, Daksh Vasudeva, Siddharth Mohan</dd></div>
+        <div><dt>Makeup artists</dt><dd>Iris Nandi, Sandali Dhillon</dd></div>
+        <div><dt>&nbsp;</dt><dd>Chitkara Design School</dd></div>
+      </dl>
+      <div class="boards">
+        <button class="board" type="button" data-lightbox="boards" data-full="../img/es-board-1.webp" data-w="760" data-h="1005" data-cap="Storyboard, sheet 1, from the process deck"><img src="../img/es-board-1.webp" width="760" height="1005" loading="lazy" decoding="async" alt="Hand-drawn storyboard sheet: scene 1, a tired kid arrives home and throws his bag on the bed"></button>
+        <button class="board" type="button" data-lightbox="boards" data-full="../img/es-board-2.webp" data-w="760" data-h="954" data-cap="Storyboard, sheet 2, from the process deck"><img src="../img/es-board-2.webp" width="760" height="954" loading="lazy" decoding="async" alt="Hand-drawn storyboard sheet: the bag on the bed, a boy scrolling, overhead shots of homework and a laptop in bed"></button>
+        <p class="hand boards__cap">the storyboard</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- the research -->
+  <div class="research">
+    <figure class="research__sheet" data-reveal>
+      <button class="research__btn" type="button" data-lightbox="research" data-full="../media/research-snapshot.svg" data-w="1100" data-h="720" data-cap="Research sheet, anonymised">
+        <img src="../media/research-snapshot.svg" width="1100" height="720" loading="lazy" decoding="async" alt="Anonymised research sheet: six rows with entry, group, score, source category, living and work columns">
+      </button>
+      <figcaption>Six visible rows of the survey sheet. Names and timestamps removed; categories are the project's own labels, not diagnoses.</figcaption>
+    </figure>
+    <div class="research__docs">
+      <a class="ticket ticket--ivory" href="../media/research.pdf" target="_blank" rel="noopener"><span>The Bed Centric Lifestyle, Leisure and Work in Conflict</span><span class="ticket__s">research deck · 19 pages · PDF</span></a>
+      <a class="ticket ticket--ivory" href="../media/everything-space.pdf" target="_blank" rel="noopener"><span>The Everything Space, process</span><span class="ticket__s">process deck · 38 pages · PDF</span></a>
+      <p class="team"><span class="hand">research team</span> Daksh Vasudeva, Dhairya Gupta, Dhriti Jalota, Iris, Kritika Vyas, Parisha Sheoran, Riya Sharma, Sandali, Siddharth, Swar, Vikrant and Yashika.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="room" id="console" data-theme="ivory" style="padding:100px 7vw;background:#efe6d3;color:#1c2066">
+  <p class="hand">05 / physical × digital</p><h2 style="font-size:clamp(44px,7vw,100px);margin:10px 0 25px">The Crossing.</h2>
+  <p style="max-width:570px;line-height:1.6">A handmade game controller, built with Arduino, Blender and code. A rope-wrapped helm, a keypad and a sonar display bring the ship to life.</p>
+  <a class="tape tape--ivory" href="../?view=console" style="display:inline-block;margin:20px 0 35px">Play the 15-second experience ↗</a>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px;align-items:center">
+    <video controls playsinline preload="none" poster="../media/gaming-poster.webp" src="../media/gaming.mp4" style="width:100%;max-height:560px;background:#111" aria-label="The real handmade console connected to a laptop"></video>
+    <div style="display:flex;gap:12px;flex-wrap:wrap"><a href="../media/console-build-01.webp" target="_blank" rel="noopener" style="width:calc(50% - 12px);padding:9px 9px 25px;background:#faf5e9;box-shadow:0 10px 25px #0002;transform:rotate(-3deg)"><img src="../media/console-build-01.webp" loading="lazy" alt="Physical console build, photograph 1" style="width:100%;display:block"></a><a href="../media/console-build-02.webp" target="_blank" rel="noopener" style="width:calc(50% - 12px);padding:9px 9px 25px;background:#faf5e9;box-shadow:0 10px 25px #0002;transform:rotate(0deg)"><img src="../media/console-build-02.webp" loading="lazy" alt="Physical console build, photograph 2" style="width:100%;display:block"></a><a href="../media/console-build-03.webp" target="_blank" rel="noopener" style="width:calc(50% - 12px);padding:9px 9px 25px;background:#faf5e9;box-shadow:0 10px 25px #0002;transform:rotate(3deg)"><img src="../media/console-build-03.webp" loading="lazy" alt="Physical console build, photograph 3" style="width:100%;display:block"></a></div>
+  </div>
+</section>
+<!-- ============ END ============ -->
+<footer class="room room--end" id="end" data-theme="cobalt">
+  <span class="end__mark" aria-hidden="true"></span>
+  <p class="stamp stamp--end"><span class="stamp__line">Daksh</span><span class="stamp__line">Vasudeva</span></p>
+  <p class="hand end__note">that's the scrapbook, for now.</p>
+  <p class="end__links"><a href="#top" class="tape tape--ivory" style="--rot:-2deg">back to the cover ↑</a></p>
+  <p class="end__colo">Set in Archivo &amp; Gochi Hand. The torn edges are generated fresh on every visit.</p>
+</footer>
+</main>
+
+<!-- ============ SEM THREE READER ============ -->
+<div class="reader" id="reader" role="dialog" aria-modal="true" aria-label="Semester Three, full scroll" hidden>
+  <div class="reader__bar">
+    <button class="reader__close" type="button" id="reader-close"><span aria-hidden="true">✕</span> close</button>
+    <p class="reader__title"><span class="hand">Sem Three</span> <span class="reader__chap" id="reader-chap"></span></p>
+    <a class="reader__pdf" href="../media/semester-three.pdf" target="_blank" rel="noopener">PDF ↗</a>
+    <span class="reader__progress" aria-hidden="true"><span id="reader-progress"></span></span>
+  </div>
+  <div class="reader__scroll" id="reader-scroll" tabindex="-1">
+    <div class="reader__doc" id="reader-doc"></div>
+    <p class="reader__end hand">end of the scroll</p>
+  </div>
+  <nav class="ruler" id="ruler" aria-label="Jump to a chapter"></nav>
+</div>
+
+<!-- ============ LIGHTBOX ============ -->
+<dialog class="lightbox" id="lightbox" aria-label="Artwork">
+  <figure class="lightbox__fig">
+    <div class="lightbox__img"><img id="lb-img" alt=""></div>
+    <figcaption class="hand" id="lb-cap"></figcaption>
+  </figure>
+  <button class="lightbox__close" type="button" id="lb-close">close <span aria-hidden="true">✕</span></button>
+  <button class="lightbox__nav lightbox__nav--prev" type="button" id="lb-prev" aria-label="Previous"><span aria-hidden="true">←</span></button>
+  <button class="lightbox__nav lightbox__nav--next" type="button" id="lb-next" aria-label="Next"><span aria-hidden="true">→</span></button>
+</dialog>
+
+<script src="js/site.js" defer></script>
+</body>
+</html>
