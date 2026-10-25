@@ -13,7 +13,7 @@
 <link rel="preload" href="fonts/archivo-var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/gochi-hand.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="pages/0F.webp" as="image" crossorigin>
-<link rel="stylesheet" href="app.css?v=675b7959">
+<link rel="stylesheet" href="app.css?v=af2876b6">
 <link rel="canonical" href="https://daksh407.github.io/">
 <meta property="og:url" content="https://daksh407.github.io/">
 <meta name="twitter:card" content="summary_large_image">
@@ -48,9 +48,17 @@
     <button id="to-console" class="tidy" type="button" hidden>Play</button>
     <button id="tidy" class="tidy" type="button" hidden>tidy the desk ↺</button>
     <button id="sound" class="sound" type="button" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path class="w1" d="M16 9.5c1 .9 1 4.1 0 5"/><path class="w2" d="M18.5 7c2.2 2.4 2.2 7.6 0 10"/></svg><span>sound</span></button>
+    <button id="hire" class="hire" type="button" aria-expanded="false">Hire me <span aria-hidden="true">✶</span></button>
     <a class="quickread" href="flat/" title="Every project on one scrolling page">Quick read <span aria-hidden="true">≡</span></a>
   </div>
 </header>
+
+<div id="hire-card" class="hire-card" hidden role="dialog" aria-label="Hire me">
+  <p class="hire-card__k">psst. recruiters, studios, curious people:</p>
+  <p class="hire-card__t">Hire me before someone else does.</p>
+  <p class="hire-card__b">I make films, paper pop-ups, furniture concepts and a game console nobody asked for. Imagine what I'd do with a real brief.</p>
+  <div class="hire-card__l"><a href="mailto:daksh010879@gmail.com?subject=Saw%20your%20scrapbook">✉ daksh010879@gmail.com</a><a href="https://www.instagram.com/dakshvasu_/" target="_blank" rel="noopener">Instagram @dakshvasu_</a></div>
+</div>
 
 <div id="hot-layer" class="hot-layer" role="group" aria-label="On this spread"></div>
 <p id="hint" class="hint" aria-hidden="true">drag the corner<br>to open it <svg viewBox="0 0 60 50"><path d="M50 6 C 46 30, 30 42, 8 40 M 20 30 L 8 40 L 20 48"/></svg></p>
@@ -154,6 +162,7 @@
 </div>
 <noscript><p class="fallback" style="display:block">This scrapbook needs JavaScript. <a href="flat/">Open the quick read →</a></p></noscript>
 
-<script src="app.js?v=675b7959" onerror="document.documentElement.classList.add('no-webgl');document.getElementById('arrival').hidden=true"></script>
+<script src="app.js?v=af2876b6" onerror="document.documentElement.classList.add('no-webgl');document.getElementById('arrival').hidden=true"></script>
+<script>(()=>{const b=document.getElementById('hire'),c=document.getElementById('hire-card');if(!b||!c)return;const set=o=>{c.hidden=!o;b.setAttribute('aria-expanded',o)};b.addEventListener('click',e=>{e.stopPropagation();set(c.hidden)});document.addEventListener('pointerdown',e=>{if(!c.hidden&&!c.contains(e.target)&&e.target!==b)set(false)});document.addEventListener('keydown',e=>{if(e.key==='Escape')set(false)});})();</script>
 </body>
 </html>
