@@ -13,7 +13,7 @@
 <link rel="preload" href="fonts/archivo-var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/gochi-hand.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="pages/0F.webp" as="image" crossorigin>
-<link rel="stylesheet" href="app.css?v=af2876b6">
+<link rel="stylesheet" href="app.css?v=e6fdc855">
 <link rel="canonical" href="https://daksh407.github.io/">
 <meta property="og:url" content="https://daksh407.github.io/">
 <meta name="twitter:card" content="summary_large_image">
@@ -91,7 +91,8 @@
 </div>
 <p id="page-guide" class="page-guide" hidden><span class="mouse-guide">Drag page edges · ← → keys</span><span class="touch-guide">Swipe page edges · tap arrows</span></p>
 <div id="flip-controls" class="flip-controls" hidden><label for="flip-slider">Flip slider</label><input id="flip-slider" type="range" min="1" max="5" step="1" value="1" aria-label="Flip slider, shaving frame"><div class="flip-numbers" role="group" aria-label="Choose a shaving frame"><button type="button" data-flip-frame="1" aria-label="Show shaving frame 1" aria-pressed="true">1</button><button type="button" data-flip-frame="2" aria-label="Show shaving frame 2" aria-pressed="false">2</button><button type="button" data-flip-frame="3" aria-label="Show shaving frame 3" aria-pressed="false">3</button><button type="button" data-flip-frame="4" aria-label="Show shaving frame 4" aria-pressed="false">4</button><button type="button" data-flip-frame="5" aria-label="Show shaving frame 5" aria-pressed="false">5</button></div></div>
-<div id="bed-controls" class="bed-controls" hidden><span>Bed</span><input type="range" id="bed-slider" min="0" max="100" value="0" aria-label="Transform the bed into a chair and side table"><span>Work</span><button type="button" id="bed-page" hidden>Back to page ↶</button></div>
+<div id="bed-controls" class="bed-controls" hidden><span>Bed</span><input type="range" id="bed-slider" min="0" max="100" value="0" aria-label="Transform the bed into a chair and side table"><span>Work</span></div>
+<button type="button" id="bed-page" class="zoom-out" hidden>↶ Back to the page</button>
 <button type="button" id="book-to-game" class="book-to-game" hidden><span>Explore Arduino</span><span>design project ↗</span></button>
 <button id="zoom-out" class="zoom-out" type="button" hidden>⤡ Zoom out</button>
 <p id="phone-coach" class="phone-coach" hidden><b>Swipe</b> to turn the page<br><b>Double-tap</b> to zoom in and read<span class="coach-turn"><br>Turn your phone sideways to see it bigger</span></p>
@@ -162,7 +163,7 @@
 </div>
 <noscript><p class="fallback" style="display:block">This scrapbook needs JavaScript. <a href="flat/">Open the quick read →</a></p></noscript>
 
-<script src="app.js?v=af2876b6" onerror="document.documentElement.classList.add('no-webgl');document.getElementById('arrival').hidden=true"></script>
+<script src="app.js?v=e6fdc855" onerror="document.documentElement.classList.add('no-webgl');document.getElementById('arrival').hidden=true"></script>
 <script>(()=>{const b=document.getElementById('hire'),c=document.getElementById('hire-card');if(!b||!c)return;const set=o=>{c.hidden=!o;b.setAttribute('aria-expanded',o)};b.addEventListener('click',e=>{e.stopPropagation();set(c.hidden)});document.addEventListener('pointerdown',e=>{if(!c.hidden&&!c.contains(e.target)&&e.target!==b)set(false)});document.addEventListener('keydown',e=>{if(e.key==='Escape')set(false)});})();</script>
 </body>
 </html>
